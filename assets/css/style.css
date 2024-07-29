@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+h2{
+    display: flex;
+   margin-left: 20%;
+   color: rgb(182, 184, 179);
+}
+
+h3{
+    display: none;
+}
+
+.nav-item{
+    margin-bottom: 2rem;
+}
+
+main {
+    display: flex
+}
+
+.contactos {
+    width: 30vw;
+    max-width: 450px;
+    background-color: rgb(240, 148, 224);
+}
+
+.separacion1{
+    overflow-y: auto;
+    height: 93.8vh;
+    
+}
+
+img:hover{
+    transform: scale(1.5);
+    border-radius: 20px;
+    
+}
+
+.contactos__individual {
+    border-radius: 50%;
+    display: flex;
+    margin-top: 2rem;
+}
+
+img {
+    border-radius: 50%;
+}
+
+.fecha {
+    font-size: 0.6rem;
+}
+
+.negrita{
+    font-weight: bold;
+}
+
+.contacos__individual__layot__z {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.contactos__individual__layout {
+    .nombre {
+        font-size: 1.15rem;
+    }
+
+    p {
+        color: grey;
+    }
+}
+
+.chat {
+    width: 70vw;
+    background-color: burlywood;
+    padding: 1.25rem 1.25rem 4rem 1.25rem;
+    flex-grow: 1;
+}
+
+.nav-link{
+    display: inline;
+}
+
+.nombre__chat {
+    font-size: 1.7rem;
+    font-family: cursive;
+}
+
+.respuesta{
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    height: 83.8vh;
+}
+
+.derecha {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-right: 1.25rem;
+    margin-top: 0rem;
+    margin-bottom: 0;
+    margin-right: 1rem;
+    width: 300px;
+    max-width: 700px;
+    background-color: pink;
+    padding: .25rem 0 .25rem .25rem;
+    border-radius: 20px;
+    border-top-right-radius: 0px;
+    align-self: end;
+}
+
+.izquierda{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-right: 1.25rem;
+    background-color: antiquewhite;
+    position: relative;
+    width: 300px;
+    max-width: 700px;
+    margin-top: 0rem;
+    margin-bottom: 0;
+    border-radius: 5px;
+    padding: .25rem 0 .25rem .25rem;
+    border-radius: 20px;
+    border-top-left-radius:0;
+}
+
+.input {
+    width: 55vw;
+    border-radius: 5px;
+    border: none;
+}
+
+.mensaje, .submit{
+    position: fixed;
+    bottom: 0px;
+}
+
+/* PARA TABLETS*/
+@media (max-width:1000px){
+
+    .navbar{
+        width: 100vw;
+        margin: 0;
+        h2{
+            display: inline;
+        }
+    }
+
+    h3{
+        display: inline;
+    }
+
+    .main{
+        flex: flex;
+        flex-direction: column;
+        background-color: rgb(240, 148, 224);
+    }
+
+    .contactos{
+      display: none; 
+      width: 100vw;
+      max-width: 100%;
+    }
+
+    .chat{
+        width: 100vw;
+        height: 95vh;
+    }
+
+    .input {
+        height: 5vh;
+    }
+    
+    .mensaje{
+        position: fixed;
+        bottom: 0px;
+    }
+    
+    .respuesta{
+       height: 73.8vh;
+    }
+
+    .input {
+        width: 85vw;
+    }
+    
+
+}
+
+/* PARA CELULARES*/
+@media (max-width:670px){
+    
+    .navbar{
+        width: 100vw;
+        margin: 0;
+        h2{
+            display: none;
+        }
+    }
+
+    h3{
+        display: inline;
+    }
+    
+    .main{
+        flex: flex;
+        flex-direction: column;
+        background-color: rgb(240, 148, 224);
+    }
+
+    .contactos{
+      display: none; 
+      width: 100vw;
+      max-width: 100%;
+    }
+    
+    .chat{
+        width: 100vw;
+        height: 95vh;
+    }
+
+    .input {
+        height: 5vh;
+    }
+    
+    .mensaje, .submit{
+        position: fixed;
+        bottom: 0px;
+    }
+    
+    .respuesta{
+       height: 73.8vh;
+    }
+
+    .input {
+        width: 70vw;
+    }
+}

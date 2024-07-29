@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/42cfc334c1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--Navbar negro lateral derecho-->
+    <nav class="navbar navbar-dark bg-dark ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <h3><button id="boton" type="button">Cambiar</button></h3>
+                <h2>Chat para vendedores y equipo de soporte</h2>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Volver a:</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Pagina principal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Preguntas frecuentes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Manuales y Tutoriales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Calendario</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Administración de perfil de usuario</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Organigrama de la empresa</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="main">
+    <!--lista de contactos existentes, lateral izquierdo-->
+        <section class="contactos" id="contactos">
+            <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar Contacto" aria-label="Search">
+                <button class="btn btn-info" type="submit">OK</button>
+            </form>
+            <ul class="separacion1">
+                <li class="contactos__individual">
+                    <img src="./assets/Img/Contacto1.jpeg " alt="" width="70px" height="70px">
+                    <div class="contactos__individual__layout">
+                        <div class="contacos__individual__layot__z">
+                            <span class="nombre negrita" >Juan Torres</span><span
+                            class="badge text-bg-danger">4</span>
+                            <span class="fecha"> hace 2 minutos</span>
+                        </div>
+                        <p class="d-inline-block text-truncate" style="max-width: 150px;">ultima conversación ultima
+                            Lorem ipsum dolor </p>
+                    </div>
+                </li>
+                <li class="contactos__individual">
+                    <img src="./assets/Img/contacto2.avif " alt="" width="70px" height="70px">
+                    <div class="contactos__individual__layout">
+                        <div class="contacos__individual__layot__z">
+                            <span class="nombre negrita">Pedro Palma</span><span
+                            class="badge text-bg-danger">1</span>
+                            <span class="fecha"> hace 1 hora </span>
+                        </div>
+                        <p class="d-inline-block text-truncate" style="max-width: 150px;">donde estuviste ayer que no te
+                            vi</p>
+                    </div>
+                </li>
+                <li class="contactos__individual">
+                    <img src="./assets/Img/contacto3.jpeg " alt="" width="70px" height="70px">
+                    <div class="contactos__individual__layout">
+                        <div class="contacos__individual__layot__z">
+                            <span class="nombre">Alejandra Ovalle</span>
+                            <span class="fecha"> 24/07/2024 19:23</span>
+                        </div>
+                        <p class="d-inline-block text-truncate" style="max-width: 150px;">cuanto se demorará en
+                            arreglarlo </p>
+                    </div>
+                </li>
+                <li class="contactos__individual">
+                    <img src="./assets/Img/contacto4.jpeg " alt="" width="70px" height="70px">
+                    <div class="contactos__individual__layout">
+                        <div class="contacos__individual__layot__z">
+                            <span class="nombre">Diana Salgado</span>
+                            <span class="fecha"> 24/07/2024 10:43</span>
+                        </div>
+                        <p class="d-inline-block text-truncate" style="max-width: 150px;">ultima conversación ultima
+                            Lorem ipsum dolor </p>
+                    </div>
+                </li>
+                <li class="contactos__individual">
+                    <img src="./assets/Img/Contacto1.jpeg " alt="" width="70px" height="70px">
+                    <div class="contactos__individual__layout">
+                        <div class="contacos__individual__layot__z">
+                            <span class="nombre negrita">Carlos Diaz</span><span
+                                class="badge text-bg-danger">34</span>
+                            <span class="fecha"> 19/07/2024 12:03</span>
+                        </div>
+                        <p class="d-inline-block text-truncate" style="max-width: 150px;">ultima conversación ultima
+                            Lorem ipsum dolor </p>
+                    </div>
+                </li>
+                <li class="contactos__individual">
+                    <img src="./assets/Img/contacto2.avif " alt="" width="70px" height="70px">
+                    <div class="contactos__individual__layout">
+                        <div class="contacos__individual__layot__z">
+                            <span class="nombre">María Robles</span>
+                            <span class="fecha"> 19/06/2024 16:03</span>
+                        </div>
+                        <p class="d-inline-block text-truncate" style="max-width: 150px;">ultima conversación ultima
+                            Lorem ipsum dolor </p>
+                    </div>
+                </li>
+                <li class="contactos__individual">
+                    <img src="./assets/Img/contacto3.jpeg " alt="" width="70px" height="70px">
+                    <div class="contactos__individual__layout">
+                        <div class="contacos__individual__layot__z">
+                            <span class="nombre">Luis Perez</span>
+                            <span class="fecha"> 14/06/2024 16:03</span>
+                        </div>
+                        <p class="d-inline-block text-truncate" style="max-width: 150px;">ultima conversación ultima
+                            Lorem ipsum dolor </p>
+                    </div>
+                </li>
+                <li class="contactos__individual">
+                    <img src="./assets/Img/contacto4.jpeg " alt="" width="70px" height="70px">
+                    <div class="contactos__individual__layout">
+                        <div class="contacos__individual__layot__z">
+                            <span class="nombre">Samir Contreras</span>
+                            <span class="fecha"> 19/05/2024 19:03</span>
+                        </div>
+                        <p class="d-inline-block text-truncate" style="max-width: 150px;">ultima conversación ultima
+                            Lorem ipsum dolor </p>
+                    </div>
+                </li>
+                <li class="contactos__individual">
+                    <img src="./assets/Img/contacto3.jpeg " alt="" width="70px" height="70px">
+                    <div class="contactos__individual__layout">
+                        <div class="contacos__individual__layot__z">
+                            <span class="nombre">Luis Perez</span>
+                            <span class="fecha"> 09/05/2024 11:53</span>
+                        </div>
+                        <p class="d-inline-block text-truncate" style="max-width: 150px;">ultima conversación ultima
+                            Lorem ipsum dolor </p>
+                    </div>
+                </li>
+                <li class="contactos__individual">
+                    <img src="./assets/Img/contacto4.jpeg " alt="" width="70px" height="70px">
+                    <div class="contactos__individual__layout">
+                        <div class="contacos__individual__layot__z">
+                            <span class="nombre">Samir Contreras</span>
+                            <span class="fecha"> 05/03/2024 09:03</span>
+                        </div>
+                        <p class="d-inline-block text-truncate" style="max-width: 150px;">ultima conversación ultima
+                            Lorem ipsum dolor </p>
+                    </div>
+                </li>
+                <li class="contactos__individual">
+                    <img src="./assets/Img/contacto3.jpeg " alt="" width="70px" height="70px">
+                    <div class="contactos__individual__layout">
+                        <div class="contacos__individual__layot__z">
+                            <span class="nombre">Luis Perez</span>
+                            <span class="fecha"> 02/03/2024 11:03</span>
+                        </div>
+                        <p class="d-inline-block text-truncate" style="max-width: 150px;">ultima conversación ultima
+                            Lorem ipsum dolor </p>
+                    </div>
+                </li>
+                <li class="contactos__individual">
+                    <img src="./assets/Img/contacto4.jpeg " alt="" width="70px" height="70px">
+                    <div class="contactos__individual__layout">
+                        <div class="contacos__individual__layot__z">
+                            <span class="nombre">Samir Contreras</span>
+                            <span class="fecha"> 05/01/2024 09:03</span>
+                        </div>
+                        <p class="d-inline-block text-truncate" style="max-width: 150px;">ultima conversación ultima
+                            Lorem ipsum dolor </p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!--Conversacion de Chat-->
+        <section class="chat">
+            <div class="contactos__individual__chat">
+                <img src=" ./assets/Img/contacto4.jpeg " alt="" width="90px" height="90px">
+                <span class="nombre__chat">Samir Contreras</span>
+                <span class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false"><i class="fa-solid fa-bars"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">Mensajes destacados</a></li>
+                        <li><a class="dropdown-item" href="#">Vaciar chat</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Eliminar Contacto</a></li>
+                    </ul>
+                </span>
+            </div>
+            <div class="respuesta">
+                <p class="derecha">Buenos días, Como está?</p>
+                <p class="izquierda">Bien. gracias por preguntar.</p>
+                <p class="derecha">Necesito me arregles la radio</p>
+                <p class="izquierda">ok, pero no quiero</p>
+                <p class="derecha">estás simpatico...</p>
+                <p class="izquierda">lo mereces por traidor</p>
+                <p class="derecha">modo novela -.-</p>
+                <p class="izquierda">of course, que es la vida sin dramas? escribe algo si me lees</p>
+            </div>
+            <!--input para conversar en el chat-->
+            <form action="" class="mensaje" role="text">
+                <input class="input" name="texto" type="text">
+                <div class="btn-group ">
+                    <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="fa-regular fa-folder-open"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Galería</a></li>
+                        <li><a class="dropdown-item" href="#">Documento</a></li>
+                        <li><a class="dropdown-item" href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                <input type="submit" value="Ok">
+            </form>
+        </section>
+    </main>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
